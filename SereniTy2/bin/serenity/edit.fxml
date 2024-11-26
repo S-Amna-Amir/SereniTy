@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="332.0" prefWidth="316.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/23.0.1" fx:controller="application.editcontroller">
+   <children>
+      <ListView fx:id="goalsListView" layoutX="22.0" layoutY="48.0" prefHeight="188.0" prefWidth="272.0"/>
+      <Button layoutX="27.0" layoutY="279.0" mnemonicParsing="false" onAction="#goBackToGoalsForm" text="Back"/>
+      <Button layoutX="232.0" layoutY="279.0" mnemonicParsing="false" onAction="#saveGoalChanges" text="Save"/>
+   </children>
+</AnchorPane>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="serenity.ActualHomePageController">
+   <children>
+      <Button layoutX="285.0" layoutY="158.0" mnemonicParsing="false" onAction="#btn_edit_account_clicked" prefHeight="25.0" prefWidth="201.0" text="Edit Account" />
+      <Button layoutX="359.0" layoutY="279.0" mnemonicParsing="false" text="Logout" />
+      <Button fx:id="btn_delete_account" layoutX="285.0" layoutY="200.0" mnemonicParsing="false" onAction="#btn_delete_account_clicked" prefWidth="201.0" text="Delete Account" />
+      <Button layoutX="285.0" layoutY="115.0" mnemonicParsing="false" onAction="#btn_mood_calendar_clicked" prefHeight="25.0" prefWidth="201.0" text="View Mood Calendar" />
+      <AnchorPane prefHeight="400.0" prefWidth="180.0">
+         <children>
+            <Button layoutX="12.0" layoutY="76.0" mnemonicParsing="false" onAction="#switchToJournal" prefHeight="30.0" prefWidth="165.0" text="Your Journal">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <Button layoutX="12.0" layoutY="120.0" mnemonicParsing="false" onAction="#switchToExercises" prefHeight="25.0" prefWidth="165.0" text="Your exercises">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <Button layoutX="11.0" layoutY="162.0" mnemonicParsing="false" onAction="#switchToHighlights" prefHeight="25.0" prefWidth="165.0" text="Highlights">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <Button layoutX="12.0" layoutY="208.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="165.0" text="Goals">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <Button layoutX="15.0" layoutY="250.0" mnemonicParsing="false" prefHeight="19.0" prefWidth="159.0" text="Your Stats">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <Button layoutX="14.0" layoutY="292.0" mnemonicParsing="false" prefHeight="16.0" prefWidth="159.0" text="Feedback">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <Label layoutX="323.0" layoutY="46.0" prefHeight="31.0" prefWidth="126.0" text="Home Page">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

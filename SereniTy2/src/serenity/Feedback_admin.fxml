@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.FeedbackAdminController" spacing="10" padding="20">
+    <TextArea fx:id="feedbackTextArea" promptText="Enter feedback here..." wrapText="true" prefHeight="150"/>
+    <Button fx:id="saveButton" text="Save Feedback" onAction="#handleSaveFeedback"/>
+    <TextArea fx:id="feedbackDisplayArea" promptText="Feedback Display Area" wrapText="true" prefHeight="150"/>
+    <Button fx:id="backButton" text="Back to Admin Menu" onAction="#goBackToAdminMenu"/>
+</VBox>

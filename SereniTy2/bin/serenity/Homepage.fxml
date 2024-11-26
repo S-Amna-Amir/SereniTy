@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="serenity.HomePageController">
+   <children>
+      <Button layoutX="173.0" layoutY="99.0" mnemonicParsing="false" onAction="#btn_happy_clicked" text="happy" />
+      <Button layoutX="117.0" layoutY="169.0" mnemonicParsing="false" onAction="#btn_excited_clicked" text="excited" />
+      <Button layoutX="173.0" layoutY="220.0" mnemonicParsing="false" onAction="#btn_hopeful_clicked" text="hopeful" />
+      <Button layoutX="372.0" layoutY="99.0" mnemonicParsing="false" onAction="#btn_sad_clicked" text="sad" />
+      <Button layoutX="413.0" layoutY="169.0" mnemonicParsing="false" onAction="#btn_angry_clicked" text="angry" />
+      <Button layoutX="372.0" layoutY="220.0" mnemonicParsing="false" onAction="#btn_anxious_clicked" text="anxious" />
+      <ComboBox fx:id="intensity_box" layoutX="249.0" layoutY="134.0" prefHeight="26.0" prefWidth="102.0" promptText="Intensity...">
+      </ComboBox>
+      <Button layoutX="244.0" layoutY="269.0" mnemonicParsing="false" onAction="#btn_grateful_clicked" text="grateful" />
+      <Button layoutX="331.0" layoutY="269.0" mnemonicParsing="false" onAction="#btn_fearful_clicked" text="fearful" />
+      <Button layoutX="287.0" layoutY="307.0" mnemonicParsing="false" onAction="#btn_ok_clicked" text="ok" />
+   </children>
+</AnchorPane>

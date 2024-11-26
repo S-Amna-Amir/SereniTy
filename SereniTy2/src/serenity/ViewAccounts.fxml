@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="serenity.ViewUsersController">
+   <children>
+   
+      <TableView fx:id="tableView" layoutX="80.0" layoutY="41.0" prefHeight="200.0" prefWidth="462.0">
+        <columns>
+          <TableColumn fx:id="colAccountId" prefWidth="75.0" text="Account ID" />
+          <TableColumn fx:id="colUsername" prefWidth="75.0" text="Username" />
+            <TableColumn fx:id="colFullName" prefWidth="75.0" text="Full Name" />
+            <TableColumn fx:id="colEmail" prefWidth="75.0" text="Email Address" />
+            <TableColumn fx:id="colAge" prefWidth="75.0" text="Age" />
+            <TableColumn fx:id="colRegDate" prefWidth="75.0" text="Joining Date" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

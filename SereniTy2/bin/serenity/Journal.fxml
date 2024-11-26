@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="JournalPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="serenity.SceneController">
+   <children>
+      <AnchorPane layoutX="-3.0" layoutY="-2.0" prefHeight="609.0" prefWidth="232.0">
+         <children>
+            <Label layoutX="75.0" layoutY="110.0" text="Welcome">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Button layoutX="25.0" layoutY="202.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="189.0" text="Your Journal">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <Button layoutX="23.0" layoutY="241.0" mnemonicParsing="false" onAction="#switchToExercises" prefHeight="31.0" prefWidth="189.0" text="Your exercises">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <Button layoutX="25.0" layoutY="281.0" mnemonicParsing="false" onAction="#switchToHighlights" prefHeight="30.0" prefWidth="189.0" text="Highlights">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <Button layoutX="25.0" layoutY="164.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="189.0" text="Home">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <Button layoutX="25.0" layoutY="318.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="189.0" text="Goals">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <Button layoutX="25.0" layoutY="359.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="189.0" text="Your Stats">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <Button layoutX="25.0" layoutY="400.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="189.0" text="Feedback">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="214.0" layoutY="6.0" prefHeight="84.0" prefWidth="781.0">
+         <children>
+            <Label layoutX="48.0" layoutY="27.0" text="Your Journal">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="229.0" layoutY="103.0" prefHeight="402.0" prefWidth="753.0">
+         <children>
+            <TableView fx:id="HighTable" layoutX="47.0" layoutY="46.0" onMouseClicked="#handleEntryClick" prefHeight="402.0" prefWidth="733.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="0.0">
+              <columns>
+                <TableColumn fx:id="colEntryID" prefWidth="131.0" text="EntryID" />
+                <TableColumn fx:id="colDate" prefWidth="144.0" text="Date" />
+                  <TableColumn fx:id="colEntry" prefWidth="457.0" text="Entry" />
+              </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+      <Button layoutX="229.0" layoutY="528.0" mnemonicParsing="false" onAction="#switchToJEntry" prefHeight="25.0" prefWidth="135.0" text="Add Entry" />
+      <Button layoutX="553.0" layoutY="534.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="135.0" text="View Entry" />
+      <Button layoutX="830.0" layoutY="534.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="135.0" text="Delete Entry" />
+   </children>
+</AnchorPane>

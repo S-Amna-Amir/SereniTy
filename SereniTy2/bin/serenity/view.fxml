@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.viewcontroller" spacing="10" padding="20">
+    <Label text="Goals" />
+    <ListView fx:id="goalsListView" prefHeight="200" prefWidth="200" />
+    <Button text="Back" onAction="#goBackToGoalsForm" />
+</VBox>

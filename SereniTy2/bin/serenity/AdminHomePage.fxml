@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="serenity.AdminHomePageController">
+   <children>
+      <Button layoutX="25.0" layoutY="54.0" mnemonicParsing="false" text="generate reports" />
+      <Button layoutX="51.0" layoutY="269.0" mnemonicParsing="false" onAction="#btn_view_accounts_clicked" text="view accounts" />
+      <Button layoutX="42.0" layoutY="228.0" mnemonicParsing="false" onAction="#btn_edit_user_account_clicked" text="edit user account" />
+      <Button layoutX="25.0" layoutY="187.0" mnemonicParsing="false" onAction="#btn_delete_user_clicked" text="delete user account" />
+      <Button layoutX="35.0" layoutY="154.0" mnemonicParsing="false" onAction="#btn_add_user_clicked" text="add user account" />
+      <Button layoutX="25.0" layoutY="112.0" mnemonicParsing="false" text="view feedback" />
+      <Button layoutX="441.0" layoutY="54.0" mnemonicParsing="false" text="logout" />
+      <Label fx:id="lbl_admin" layoutX="231.0" layoutY="14.0" text="admin" />
+   </children>
+</AnchorPane>
